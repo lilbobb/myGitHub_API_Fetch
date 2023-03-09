@@ -149,6 +149,8 @@ button:hover {
   justify-content: center;
   margin-left: 20px;
   background-color: red;
+  border-radius: 25% 10% 25% 10%;
+  box-shadow: 2px 2px 5px #cabcbc;
 }
 
 .bomb h1 {
@@ -162,8 +164,52 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 20px;
+  text-align: center;
   background-color: red;
   border-radius: 10% 30% 20% 60%;
   padding: 25px;
+  margin-left: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .App-ul {
+    margin-top: 20px;
+  }
+
+  .App-ul li {
+    margin-top: 0;
+  }
+
+  .repolist h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .repolist {
+    margin-left: 0;
+  }
+
+  .repodetails {
+    margin-left: 0;
+  }
+
+  .bomb {
+    margin-top: 10px;
+  }
+
+  .error {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .notfound {
+    margin-top: 10px;
+  }
 }
