@@ -1,3 +1,4 @@
+import { isDisabled } from "@testing-library/user-event/dist/utils";
 import React, { useState, useEffect } from "react";
 
 function Home() {
@@ -32,7 +33,7 @@ function Home() {
       </ul>
       <div>
         <button onClick={() => handlePageChange(page - 1)}>Prev</button>
-        <button onClick={() => handlePageChange(page + 1 )}>Next</button>
+        <button onClick={() => handlePageChange(page + 1)}>Next</button>
       </div>
     </div>
   );
